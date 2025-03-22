@@ -41,10 +41,6 @@ Simply open `index.html` in your web browser.
 | Hello   | .... . .-.. .-.. --- |
 | SOS     | ... --- ... |
 
-## Future Enhancements
-- Add sound playback for Morse code
-- Speed controls for sound playback
-
 ## Contributing
 Feel free to fork the project, open issues, or submit pull requests.
 
