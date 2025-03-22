@@ -93,5 +93,11 @@
     '-....-': '-', '..--.-': '_', '.-..-.': '"', '...-..-': '$',
     '.--.-.': '@', '': ' '
     }
+
+    const textToMorse = {}
+    for (let key in morseToText) {
+       textToMorse[morseToText[key]] = key
+        
+    }
 </script>
 </html>
