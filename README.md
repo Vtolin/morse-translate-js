@@ -9,7 +9,7 @@ A simple Morse Code Translator built with **HTML, CSS, and JavaScript**. This we
 - Simple and responsive UI
 
 ## Demo
-[Live Demo](#) (Replace with the actual link if hosted)
+[Live Demo](#) (will be hosted soon)
 
 ## Installation
 ### 1. Clone the repository
