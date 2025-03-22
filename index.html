@@ -76,7 +76,7 @@
     </div>
 </body>
 <script>
-    const input = document.querySelector('#input1')
+    const input1 = document.querySelector('#input1')
     const result = document.querySelector('input[readonly]')
     const translateBtn = document.querySelector('.translate')
     const morseToText = {
@@ -116,6 +116,26 @@
         .join(' ')
         .replace(/ \/ /g, ' / ')
     }
-    
+
+    translateBtn.addEventListener('click', () => {
+        const input = input1.value.trim()
+        if(!input) {
+            result.value = ''
+            return
+        }
+
+        if (isMorseCode(input)) {
+            const cleanedInput = input.replace(/\s+/g, '')
+            .replace(/\s*\/s*/g, " / ")
+        } else {
+            result.value = textMorseTranslate(input)
+        }
+    })
+
+    input1.addEventListener('keypress', (e) => {
+        if (e.key === enter) {
+            translateBtn.click()
+        }
+    })
 </script>
 </html>
