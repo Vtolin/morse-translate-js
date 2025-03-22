@@ -102,5 +102,20 @@
     function isMorseCode(input) {
         return /^[.\-/]*$/
     }
+
+    function morseTextTranslate(morse) {
+        return morse.split(' ')
+        .map(code => morseToText[code] || '')
+        .join(' ')
+    }
+
+    function textMorseTranslate(text) {
+        return text.toUpperCase()
+        .split('')
+        .map(char => textToMorse[char] || (char === ' ' ? "/" : ''))
+        .join(' ')
+        .replace(/ \/ /g, ' / ')
+    }
+    
 </script>
 </html>
