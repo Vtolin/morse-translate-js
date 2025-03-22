@@ -78,7 +78,7 @@
 <script>
     const input1 = document.querySelector('#input1')
     const result = document.querySelector('input[readonly]')
-    const translateBtn = document.querySelector('.translate')
+    const translateBtn = document.querySelector('button.translate, button.translate')
     const morseToText = {
     '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E',
     '..-.': 'F', '--.': 'G', '....': 'H', '..': 'I', '.---': 'J',
@@ -100,7 +100,7 @@
     }
 
     function isMorseCode(input) {
-        return /^[.\-/]*$/
+        return /^[.\-/]*$/.test(input)
     }
 
     function morseTextTranslate(morse) {
