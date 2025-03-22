@@ -97,7 +97,10 @@
     const textToMorse = {}
     for (let key in morseToText) {
        textToMorse[morseToText[key]] = key
-        
+    }
+
+    function isMorseCode(input) {
+        return /^[.\-/]*$/
     }
 </script>
 </html>
